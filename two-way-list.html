@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="two-way-list.css">
+</head>
+<body>
+  <ul class="main-list">
+    <li>
+      <div class="btn checkbox unfold"></div>
+      <span>Nagłówek drzewa <br> wielowierszowy</span>
+    
+    <ul class="nestedList">
+      <li class="group">
+        <div class="btn radio unfold"></div>
+        <span data-group-name="Poddodział"></span>
+        <ul class="nestedList">
+          <li><span data-group-name="Zespół">HR</span></li>
+          <li><span data-group-name="Zespół">Marketing</span></li>
+          <li class="group">
+            <div class="btn checkbox collapsed"></div>
+            <span data-group-name="Zespół">Analitycy</span>
+            <ul class="nestedList">
+              <li><span data-group-name="Podzespół">Kalendarz</span></li>
+              <li><span data-group-name="Podzespół">Kokpit</span></li>
+              <li><span data-group-name="Podzespół">Widok</span></li>
+              <li><span data-group-name="Podzespół">Różności</span></li>
+              <li><span data-group-name="Podzespół">Szukaj</span></li>
+            </ul>
+          </li>
+          <li class="group">
+            <div class="btn checkbox unfold"></div>
+            <span data-group-name="Zespół">Programiści</span>
+            <ul class="nestedList">
+              <li><span data-group-name="Podzespół">Front-end</span></li>
+              <li><span data-group-name="Podzespół">Middle-front-end</span></li>
+              <li><span data-group-name="Podzespół">Middle-end</span></li>
+              <li><span data-group-name="Podzespół">Middle-back-end</span></li>
+              <li><span data-group-name="Podzespół">Back-end</span></li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li class="group">
+        <div class="btn radio collapsed"></div>
+        <span data-group-name="Poddodział"></span>
+      </li>
+      <li class="group">
+        <div class="btn radio collapsed">&#43;</div>
+        <span data-group-name="Poddodział"></span>
+      </li>
+      <li class="group">
+        <span>Niezrzeszeni</span>
+      </li>
+    </ul>
+  </li>
+  </ul>
+</body>
+</html>
